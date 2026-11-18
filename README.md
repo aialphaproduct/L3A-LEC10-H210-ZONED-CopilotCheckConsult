@@ -10,6 +10,10 @@ Zone D case studies for AI tools in the public sector.
 | Microsoft 365 Copilot | [analysis.md](./cases/microsoft-365-copilot/analysis.md) | None |
 | Slimme Check | [analysis.md](./cases/slimme-check/analysis.md) | [case-study.pptx](./cases/slimme-check/case-study.pptx) |
 
+## Group discussion
+
+- [Zone D cross-case A3 worksheet](./cases/zone-d-a3-worksheet.md)
+
 ## Structure and naming
 
 Each case lives in `cases/<case-name>/` using a lowercase kebab-case folder name. The case write-up is named `analysis.md`; supporting materials stay in the same folder with descriptive filenames.

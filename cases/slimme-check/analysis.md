@@ -11,8 +11,9 @@ Tương tự như việc đối chiếu giữa thông cáo báo chí và hồ s�
 - **Cuối 2022 (Tinh chỉnh mô hình):** Thay vì dừng lại, nhóm R&D sử dụng phản hồi của hội đồng để loại bỏ một số biến số nhạy cảm trực tiếp khỏi thuật toán và chuẩn bị đưa ra chạy thử nghiệm.
 - **Đầu tháng 4/2023 (Điểm quyết định – Gate 1):** Chính quyền Amsterdam quyết định bấm nút chạy Pilot trong 4 tháng (17/4/2023 – 31/8/2023) trên quy trình xét duyệt hồ sơ thực tế.
 - **Ngày 2/11/2023 (Khuyến nghị từ chuyên gia độc lập):** Nhà nghiên cứu Hans de Zwart (Đại học Khoa học Ứng dụng Amsterdam - HvA), người được mời giám sát đạo đức của dự án, gửi báo cáo lên Hội đồng thành phố khuyên chấm dứt hoàn toàn Slimme Check, nhấn mạnh rủi ro áp dụng AI lên nhóm công dân yếu thế và hội chứng "tin mù quáng vào máy" (*automation bias*).
+- **Tháng 11/2023 (Dừng phát triển):** Alderman Groot Wassink quyết định dừng phát triển thêm vì không thể bảo đảm chắc chắn ngăn ngừa phân biệt đối xử ([OpenResearch Amsterdam](https://openresearch.amsterdam/en/page/109792/slimme-check-working-with-a-citizen-panel-for-innovation-in-the)).
 - **Ngày 14/12/2023 (Báo cáo tổng kết Pilot – Eindevaluatie):** Báo cáo nội bộ thừa nhận: dù thuật toán bắt trúng nhiều đơn sai phạm hơn cách làm thủ công, nhưng dữ liệu không đủ chất lượng để kết luận mô hình có thiên kiến (*bias*) hay không, đồng thời tính năng giải thích lý do gắn cờ lại gây bối rối cho nhân viên.
-- **Tháng 2 – Tháng 3/2024 (Kết cục):** Dự án bị đình chỉ triển khai rộng rãi (Production).
+- **Ngày 17/04/2024 (Xác nhận kết cục):** Hội đồng thành phố đồng ý không gia hạn Pilot và không tiếp tục phát triển Slimme Check ([OpenResearch Amsterdam](https://openresearch.amsterdam/en/page/109792/slimme-check-working-with-a-citizen-panel-for-innovation-in-the)).
 
 ## 2. Đọc thẻ Case Slimme Check: Đâu là bằng chứng, đâu là nhiễu?
 

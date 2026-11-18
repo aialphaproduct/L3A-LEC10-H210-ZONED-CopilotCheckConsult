@@ -1,49 +1,52 @@
-# AI Consult — Bối cảnh và bằng chứng
+# Zone D / AI Consult: phân tích case i.AI và quyết định nhóm
 
-*Phần của Mỹ: cung cấp dữ kiện nền và bằng chứng để nhóm dùng khi thảo luận. Đây chưa phải quyết định cuối cùng của nhóm về việc nên tiếp tục hay dừng công cụ.*
+## 1. Câu 1: Chuyện gì đã xảy ra đến lúc này? Bằng chứng nào, ai đưa ra?
 
-## Bối cảnh
+### Diễn biến
 
-Consult là công cụ do Incubator for AI (i.AI) phát triển để hỗ trợ công chức phân tích câu trả lời tự do trong các cuộc tham vấn công chúng. Công cụ dùng AI để tìm chủ đề trong lượng lớn phản hồi và gắn một phản hồi với một hoặc nhiều chủ đề; mục tiêu là giảm thời gian phân loại thủ công để chuyên viên tập trung hơn vào diễn giải và insight.
+[i.AI](https://ai.gov.uk/) (Incubator for AI, thuộc Bộ Khoa học, Đổi mới và Công nghệ Anh) phát triển [Consult](https://ai.gov.uk/projects/consult/) để hỗ trợ phân tích phản hồi tham vấn công chúng: xác định chủ đề chính rồi gắn một hoặc nhiều chủ đề cho từng câu trả lời.
 
-Bài viết của i.AI ngày 14/05/2025 giới thiệu một đánh giá được thực hiện cùng Chính phủ Scotland, nhằm xem Consult có thể giúp phân tích tham vấn nhanh hơn mà vẫn duy trì chất lượng insight hay không. Các số liệu đánh giá dưới đây được trích từ hồ sơ minh bạch thuật toán của DSIT; không nên hiểu chúng là kết quả riêng của thử nghiệm tại Scotland.
+Ngày 14/05/2025, i.AI công bố đánh giá cùng Chính phủ Scotland trên một cuộc tham vấn thực tế về quy định đối với các thủ thuật thẩm mỹ không phẫu thuật. Mục tiêu là xem liệu Consult có thể tăng tốc phân tích mà vẫn giữ được chất lượng insight hay không.
 
-## Cách công cụ hoạt động
+### Bằng chứng định lượng và định tính
 
-Theo hồ sơ DSIT, pipeline gồm các bước chính:
+- **Khớp chủ đề:** Consult khớp hoàn toàn với đánh giá chuyên gia ở khoảng 60% câu trả lời. Bài viết cũng nêu mức đồng thuận giữa hai chuyên gia là khoảng 62%. Đây là các mức gần nhau, nhưng không nên xem hai phép so sánh là cùng một thước đo.
+- **F1 trung bình:** 0,76/1 khi tính cả các trường hợp khớp một phần, chẳng hạn khớp 3 trong 4 chủ đề.
+- **Thứ hạng chủ đề:** Các chủ đề dịch chuyển trung bình dưới một vị trí; những chủ đề đứng đầu hầu như không đổi.
+- **Thời gian rà soát:** Trung vị 23 giây mỗi câu trả lời; 77% câu trả lời được rà soát trong dưới một phút.
+- **Chỉnh sửa của chuyên gia:** Trên 5.354 câu trả lời, chuyên gia thêm chủ đề 1.671 lần và xóa 763 lần. Nhãn “Khác” được chuyên gia dùng 793 lần so với 47 lần từ AI (xấp xỉ 17 lần).
+- **Quy trình:** Việc chốt danh sách chủ đề ban đầu cần nhiều vòng lặp hơn dự kiến.
 
-1. Mở rộng câu hỏi tham vấn bằng ngữ cảnh liên quan.
-2. Phân loại phản hồi theo mức đồng ý/không đồng ý.
-3. Sinh chủ đề từ các nhóm phản hồi.
-4. Gộp chủ đề trùng hoặc gần nghĩa, rồi chuẩn hóa cách diễn đạt.
-5. Gắn phản hồi vào một hoặc nhiều chủ đề; kết quả được trình bày để chuyên viên xem xét.
+### Ai đưa ra bằng chứng?
 
-Hồ sơ mô tả công cụ ở giai đoạn tiền triển khai, với số người dùng thử còn hạn chế. Công dân không trực tiếp tương tác với công cụ; Consult không tự ra quyết định chính sách. Chuyên viên phải kiểm tra kết quả và có thể sửa nhãn/chủ đề trước khi sử dụng trong báo cáo.
+Các số liệu trên được công bố trong bài đánh giá của i.AI, do Lucy Makinson (Trưởng bộ phận Tác động và Đánh giá tại i.AI) viết. Đánh giá kết hợp các phép đo định lượng với phỏng vấn người dùng là các chuyên gia phân tích tham gia thử nghiệm.
 
-## Bằng chứng đánh giá được công bố
+## 2. Câu 3: Quyết định trước khi mở kết cục
 
-Hồ sơ DSIT mô tả phép so sánh trên dữ liệu tham vấn: hai cố vấn chính sách gắn nhãn 200 phản hồi cho mỗi câu hỏi trong 3 câu hỏi; một cố vấn cấp cao cung cấp nhãn tham chiếu. Các chỉ số được báo cáo gồm:
+**Đề xuất để nhóm thống nhất:** Đi tiếp ở phạm vi hẹp hơn, có điều kiện.
 
-| Khía cạnh | Kết quả được công bố | Cách đọc thận trọng |
-|---|---|---|
-| Mức liên quan của phản hồi | AI đồng thuận với nhãn tham chiếu khoảng 95%; AI có xu hướng đánh dấu “liên quan” rộng hơn người gán nhãn. | Không đồng nghĩa với việc nội dung được hiểu đúng hoàn toàn. |
-| Mức đồng ý/không đồng ý | AI đồng thuận khoảng 85%. | Đây là phân loại lập trường, không phải đánh giá chất lượng lập luận. |
-| Gắn chủ đề | AI khớp nhãn tham chiếu 62%; hai người gán nhãn đạt 70–73% so với tham chiếu. Người gán nhãn cũng chỉ đồng thuận với nhau 62%. | Chỉ số khớp cứng có thể bỏ qua trường hợp một phản hồi mang nhiều chủ đề hoặc khớp một phần. Theo hồ sơ, AI kém hơn một người và gần với người còn lại. |
-| Thời gian và chi phí | Trên mẫu được thử, 3 phút so với 6 giờ; hồ sơ ước tính Consult nhanh hơn hơn 120 lần và rẻ hơn 400 lần. | Đây là kết quả của mẫu/thiết lập đánh giá được mô tả, không đảm bảo mọi tham vấn có cùng mức tiết kiệm. |
-| Lỗi thao tác | Người gán nhãn mắc 29 lỗi trên 1.200 lượt gán (gần 2,5%); hồ sơ ghi nhận công cụ không mắc lỗi thao tác trong phép thử này. | Không nên suy rộng thành “AI không mắc lỗi phân tích”; sai chủ đề và lỗi thao tác là hai loại vấn đề khác nhau. |
+**Lý do:** Thử nghiệm cho thấy tiềm năng tiết kiệm thời gian và F1 0,76, trong khi thứ hạng các chủ đề chính ít thay đổi; tuy nhiên, chuyên gia vẫn phải chỉnh sửa chủ đề đáng kể, nên cần tiếp tục thử nghiệm có giám sát thay vì mở rộng ngay không điều kiện.
 
-## Rủi ro và giới hạn cần mang vào thảo luận
+## 3. Câu 2: Vì sao họ dừng lại, hoặc vì sao họ đi tiếp được?
 
-- Gắn chủ đề là phần khó hơn: điểm AI thấp hơn người gán nhãn tốt nhất; chủ đề có thể mơ hồ hoặc cần kiến thức chuyên môn để diễn giải.
-- Mô hình nền là GPT-4o qua Azure OpenAI. Hồ sơ nêu rủi ro thiên lệch, tính khó giải thích của mô hình độc quyền, thuật ngữ chuyên ngành và câu hỏi pháp lý/quy trình.
-- Biện pháp kiểm soát được mô tả gồm chuyên viên rà soát, chỉnh sửa đầu ra, bổ sung ngữ cảnh tham vấn và phối hợp với chuyên gia lĩnh vực.
-- Hồ sơ không cho biết số lượng dữ liệu cụ thể; kết quả về thời gian/chi phí không tự chứng minh rằng kết luận chính sách sẽ tốt hơn.
+i.AI cho biết sẽ tiếp tục phát triển Consult và thử nghiệm trên các cuộc tham vấn khác trong những tháng tiếp theo. Bằng chứng về tốc độ, F1 và thứ hạng chủ đề cho thấy công cụ có tiềm năng hỗ trợ chuyên viên, nhưng lượng chỉnh sửa của chuyên gia cũng cho thấy cần giữ con người trong quy trình.
 
-## Gợi ý dùng bằng chứng
+Các hướng cải tiến được nêu gồm hoàn thiện trải nghiệm người dùng, hướng dẫn rõ hơn cách rà soát/chốt chủ đề, chuẩn hóa việc đối chiếu giữa hai chuyên gia trong đánh giá sau này và bổ sung công cụ để nhà hoạch định chính sách khai thác insight sâu hơn.
 
-Điểm mạnh có bằng chứng là tốc độ và chi phí trên mẫu thử; bằng chứng về chất lượng chủ đề có kết quả pha trộn và vẫn cần con người kiểm tra. Khi nhóm chọn hướng ở Câu 3, nên cân nhắc riêng lợi ích năng suất, độ tin cậy của insight và mức độ giám sát cần thiết; phần quyết định là của nhóm.
+## 4. Sticky notes
+
+### 2–3 tờ vàng — Điều còn thiếu
+
+1. Cần chuẩn đối chiếu với hai chuyên gia độc lập trên cùng tập dữ liệu để đo độ đồng thuận ổn định hơn.
+2. Cần hướng dẫn rõ cho bước tinh chỉnh và chốt danh sách chủ đề; thử nghiệm ghi nhận bước này mất nhiều vòng lặp.
+3. Tần suất dùng nhãn “Khác” cao ở chuyên gia cho thấy cần xem lại cách thiết kế danh sách chủ đề và cách xử lý các câu trả lời chưa được bao phủ.
+
+### 1 tờ xanh — Điều làm tốt
+
+Consult kết hợp tự động hóa với quyền kiểm soát của con người: công cụ giúp tổng hợp và gợi ý chủ đề nhanh, còn chuyên gia có thể thêm, xóa hoặc sửa trước khi sử dụng kết quả.
 
 ## Nguồn
 
-1. i.AI, [“Evaluating Consult: An AI Tool for Enhanced Public Consultation Analysis”](https://ai.gov.uk/blogs/evaluating-consult-an-ai-tool-for-enhanced-public-consultation-analysis/), 14/05/2025. Bài viết giới thiệu đánh giá cùng Chính phủ Scotland.
-2. DSIT, [Algorithmic Transparency Record: Consult](https://www.gov.uk/algorithmic-transparency-records/dsit-consult), công bố 14/05/2025. Nguồn cho mô tả pipeline, giai đoạn triển khai, người giám sát, chỉ số đánh giá và rủi ro.
+1. i.AI, [“Evaluating Consult: An AI Tool for Enhanced Public Consultation Analysis”](https://ai.gov.uk/blogs/evaluating-consult-an-ai-tool-for-enhanced-public-consultation-analysis/), 14/05/2025.
+2. i.AI, [báo cáo đánh giá Consult cùng Chính phủ Scotland (PDF)](https://ai.gov.uk/docs/Scot_Gov_NSCP_Evaluation_Report.pdf).
+3. DSIT, [Algorithmic Transparency Record: Consult](https://www.gov.uk/algorithmic-transparency-records/dsit-consult), dùng để xác nhận bối cảnh và quy trình human-in-the-loop của Consult.
